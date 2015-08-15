@@ -1,9 +1,9 @@
 /* add custom styles */
-
+/*
 .container {
 
   float: left;
-}
+}*/
 
 .idea-list {
   text-align: left;
@@ -36,7 +36,6 @@ p {
 form, input {
 /*  width: 260px;*/
   display: inline-block;
-  position: absolue;
 }
 
 .short {
@@ -56,11 +55,6 @@ p {
   display: inline-block;
 }
 
-#left-diagonal-arrow {
-    background: url('/images/diagonal-left-arrow-reduced.png') no-repeat top left;
-    padding: 16px;
-    height: 16px;
-}
 
 .enlarge {
   font-size: 2.5em;
@@ -76,3 +70,10 @@ p {
 .fixed {
   position: absolute;
 }
+
+/*
+#left-diagonal-arrow {
+    background: url('/images/diagonal-left-arrow-reduced.png') no-repeat top left;
+    padding: 16px;
+    height: 16px;
+}*/

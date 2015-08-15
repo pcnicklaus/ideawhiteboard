@@ -5,21 +5,21 @@ $(document).on('ready', function() {
 
   // create list
   $('form').on('submit', function(event) {
-    var toDoClass = null;
+    var ideaClass = null;
     event.preventDefault();
-    var $toDoItem = $('input').val();
-    // console.log($toDoItem.length);
-    if (parseInt($toDoItem.length) > 10) {
+    var $ideaItem = $('input').val();
+    // console.log($ideaItem.length);
+    if (parseInt($ideaItem.length) > 10) {
       //set one class if it's greater then 10
-      console.log($toDoItem.length);
-      toDoClass = "long";
+      console.log($ideaItem.length);
+      ideaClass = "long";
     } else {
-      toDoClass = "short";
+      ideaClass = "short";
     }
     $('input:text').val('');
 
 
-    $('#all-ideas').append('<div class="' + toDoClass + ' test make-me-draggable double-click-remove fixed"><p class="text-nowrap">' + $toDoItem + '</p></div>');
+    $('#all-ideas').append('<div class="' + ideaClass + ' test make-me-draggable alsoDrag double-click-remove fixed"><p class="text-nowrap">' + $ideaItem + '</p></div>');
 
   });
 
@@ -36,15 +36,14 @@ $(document).on('ready', function() {
     }
   });
 
-    // $( "#draggable5" ).draggable({ containment: "parent" });
 
   $('#left').on('click', function() {
-    var leftArrow = $("<i class='glyphicon glyphicon-arrow-left make-me-draggable double-click-remove enlarge rotatable fixed'></i>");
+    var leftArrow = $("<i class='glyphicon glyphicon-arrow-left make-me-draggable alsoDrag double-click-remove enlarge rotatable fixed'></i>");
     $('#arrow-landing').append($(leftArrow));
   });
 
   $('#right').on('click', function() {
-    var rightArrow = $("<i class='glyphicon glyphicon-arrow-right make-me-draggable double-click-remove enlarge rotatable fixed'></i>");
+    var rightArrow = $("<i class='glyphicon glyphicon-arrow-right make-me-draggable alsoDrag double-click-remove enlarge rotatable fixed'></i>");
     $('#arrow-landing').append($(rightArrow));
   });
 
@@ -58,21 +57,7 @@ $(document).on('ready', function() {
     $('#arrow-landing').append($(downArrow));
   });
 
-    // var params = {
-    //         // Callback fired on rotation start.
-    //         start: function(event, ui) {
-    //         },
-    //         // Callback fired during rotation.
-    //         rotate: function(event, ui) {
-    //         },
-    //         // Callback fired on rotation end.
-    //         stop: function(event, ui) {
-    //         },
-    //         // Set the rotation center at (25%, 75%).
-    //         rotationCenterX: 25.0,
-    //         rotationCenterY: 75.0
-    //     };
-    //     $('.rotatable').rotatable(params);
+
 
 });
 

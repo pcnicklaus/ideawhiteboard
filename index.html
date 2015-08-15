@@ -6,9 +6,6 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> -->
-   <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/jquery.ui.rotatable.css"> -->
-    <!--   <link rel="stylesheet" href="jquery.ui.rotatable.css"> -->
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -16,16 +13,16 @@
   <body>
 
     <div class="container-fluid">
-
       <div class="row">
-
         <form class="navbar-form">
           <div class="form-group">
             <input type="text" class="form-control input-sm inline" value="Idea...">
           </div>
+
           <button type="submit" class="btn btn-default btn-sm inline">create...</button>
+
           <div class="btn-group">
-           <div class="btn-group btn-group-sm inline" id="arrows" role="group" aria-label="...">
+            <div class="btn-group btn-group-sm inline" id="arrows" role="group" aria-label="...">
 
               <button type="button" id="up" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-up"></span></button>
 
@@ -34,61 +31,27 @@
               <button type="button" id="down" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-down"></span></button>
 
               <button type="button" id="left" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-left"></span></button>
-      </form>
-
-       <!--  <div class="col-sm-2">
-         <form>
-            <div class="form-group inline ">
-              <input type="text" class="form-control input-sm inline" value="Idea...">
-            </div>
-            <button type="submit" class="btn btn-default btn-sm inline">begin...</button>
-          </form>
-        </div>
-        <div class="col-sm-2">
-           <div class="btn-group btn-group-sm inline" id="arrows" role="group" aria-label="...">
-
-              <button type="button" id="up" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-up"></span></button>
-
-              <button type="button" id="right" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-right"></span></button>
-
-              <button type="button" id="down" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-down"></span></button>
-
-              <button type="button" id="left" class="btn btn-default white"><span class="glyphicon glyphicon-arrow-left"></span></button> -->
-
-
-
-              <!-- <button type="button" class="btn btn-default" src="images/diagonal-right-arrow.png"></button>
-              <button type="button" class="btn btn-default" id="left-diagonal-arrow" img src="diagonal-left-arrow-reduced.png"></button>
-              <a href="#" class="btn btn-default" role="button">
-                 <img src="images/diagonal-left-arrow-reduced.png" class="pull-left"/>
-              </a> -->
-
-       <!--      </div> -->
-        </div>
+          </div> <!-- end btn group -->
+        </form> <!-- end form -->
       </div> <!-- end row -->
-    </div>
+    </div> <!-- end container fluid -->
 
+    <!-- Div for placing the ideas -->
+    <div class="row">
+      <div class="col-sm-12 idea-list" id="all-ideas"></div>
+    </div> <!-- end row -->
 
-          <div class="row">
-            <div class="col-sm-1 idea-list" id="all-ideas"></div>
-            <div class="col-sm-1 col-md-1 col-lg-1" id="arrow-landing"></div>
-
-          </div>
-        <!--   <br>
-    <p ></p>
-    <p class="idea-list" id="all-ideas">
-    </p> -->
-
-    </div> <!-- end container -->
+    <!-- div for placing the arrows -->
+    <div class="row">
+      <div class="col-sm-1 col-sm-offset-1" id="arrow-landing"></div>
+    </div> <!-- end row -->
 
 
    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!--      <script src="//cdn.jsdelivr.net/jquery.ui.rotatable/1.0.1/jquery.ui.rotatable.min.js"></script> -->
-<!--      <script src="jquery.ui.rotatable.js"></script>
- -->
+
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
